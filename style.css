@@ -1,0 +1,89 @@
+:root{
+    --bg: linear-gradient(to bottom,rgb(6, 104, 146),rgb(219, 53, 202));
+    --font-size: 2rem;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto",sans-serif;
+}
+a{
+    text-decoration: none;
+     color: hsl(0, 0%, 100%);
+}
+body{
+    max-width: 1550px;
+    height: 100vh;
+    background: var(--bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+.login-container{
+    padding: 25px 45px;
+    background-color: rgb(3, 1, 72,0.5);
+    position: relative;
+    max-width: 900px;
+    max-height: 700px;
+}
+.login-container h2{
+    font-weight: bolder;
+    font-size: var(--font-size);
+    background: linear-gradient(to right, rgb(119, 55, 187),rgb(132, 35, 110),#9b152e);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+form{
+    padding: 25px 0;
+}
+.input-box{
+    padding: 15px 0;
+}
+.input-box input{
+    padding: 13px 25px;
+   width: 350px;
+   background-color: rgb(3, 1, 72,0.3);
+   border: 2px solid rgba(244, 244, 249, 0.3);
+   color: #fff;
+}
+.input-box input:focus{
+    border: 2px solid rgb(255, 2, 61);
+
+}
+.login-container button{
+    position: relative;
+    padding: 12px 30px;
+    background-color: rgb(179, 86, 20);
+    border: none;
+    outline: none;
+    box-shadow: 0 0 15px 0 #227bd4;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.login-container button:hover{
+ filter: drop-shadow(0 0 3rem rgb(0, 255, 229)) drop-shadow(0 0 3rem rgb(255, 0, 51)) drop-shadow(0 0 4rem blue);
+ transform: scale(1.05);
+}
+
+@media screen and (max-width:700px){
+    .input-box input{
+      width: 270px;
+    }
+}
+.input-box input:hover{
+    box-shadow: 0 0 15px 0 cyan,0 0 20px 0 cyan,0 0 25px 0 cyan,0 0 30px 0 cyan;
+}
+.login-container:hover{
+    filter: drop-shadow(0 0 4rem orangered) drop-shadow(0 0 4rem rgb(48, 209, 234)) drop-shadow(0 0 4rem rgb(125, 218, 13));
+}
